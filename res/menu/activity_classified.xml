@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_post_ad"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/menu_post_ad"/>
+
+</menu>

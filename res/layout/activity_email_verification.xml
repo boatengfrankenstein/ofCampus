@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include 
+        layout="@layout/generic_header"
+        android:id="@+id/layout_email_verification_header"/>
+    
+    <TextView
+        android:id="@+id/txt_activation_code_sent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_email_verification_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/Activation_Message"
+        android:textSize="@dimen/sign_up_screen" />
+
+    <EditText
+        android:id="@+id/edt_verifiction_code"
+        style="@style/SignUpEditStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_activation_code_sent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:hint="@string/verification_code" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_enter_password"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/black_button_selector"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/Verify"
+        android:textColor="@color/white_color"
+        android:textSize="18sp" />
+    
+    <EditText
+        android:id="@+id/edt_enter_mail"
+        style="@style/SignUpEditStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_verify"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:hint="@string/email" />
+    
+    <Button
+        android:id="@+id/btn_resend_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_enter_mail"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/black_button_selector"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/Resend_Code"
+        android:textColor="@color/white_color"
+        android:textSize="18sp" />
+    
+    
+    
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/generic_footer" />
+
+</RelativeLayout>

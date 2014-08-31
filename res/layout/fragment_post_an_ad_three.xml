@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/add_pictures_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray_color"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:text="@string/Add_Pictures"
+                android:textColor="@color/white_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pictureImageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/add_pictures_textview"
+                android:layout_margin="15dp"
+                android:background="@color/gray_color" />
+
+            <ImageView
+                android:id="@+id/addpictureImageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/add_pictures_textview"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/pictureImageview"
+                android:background="@color/gray_color" />
+
+            <TextView
+                android:id="@+id/add_more_details_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pictureImageview"
+                android:background="@color/gray_color"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:text="@string/Add_More_Details"
+                android:textColor="@color/white_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_more_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/add_more_details_textview"
+                android:layout_marginTop="10dp"
+                android:hint="@string/Activation_Message"
+                android:inputType="text"
+                android:maxLines="4" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_postClassifieds"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollview"
+        android:layout_margin="10dp"
+        android:background="@drawable/black_button_selector"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="@string/Post_Classifieds"
+        android:textColor="@color/white_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

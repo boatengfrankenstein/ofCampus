@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:gravity="center_horizontal"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp" >
+
+    <TextView
+        android:id="@+id/txt_helpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Help"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/footer_text_color"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/seperator1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_helpTextView"
+        android:layout_alignBottom="@+id/txt_helpTextView"
+        android:background="@color/footer_text_color"
+        android:layout_toRightOf="@+id/txt_helpTextView" />
+
+    <TextView
+        android:id="@+id/txt_contactUsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/seperator1"
+        android:text="@string/Contact_Us"
+        android:textColor="@color/footer_text_color"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/seperator2"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/txt_helpTextView"
+        android:layout_alignBottom="@+id/txt_helpTextView"
+        android:background="@color/footer_text_color"
+        android:layout_toRightOf="@+id/txt_contactUsTextView" />
+
+    <TextView
+        android:id="@+id/txt_legalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/seperator2"
+        android:text="@string/Legal"
+        android:textColor="@color/footer_text_color"
+        android:textSize="16sp" />
+
+</RelativeLayout>

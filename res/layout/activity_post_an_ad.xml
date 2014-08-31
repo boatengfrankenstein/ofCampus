@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_background_color" >
+
+        <ImageView
+            android:id="@+id/rel_header_img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:src="@drawable/logo_with_back_button" />
+
+        <TextView
+            android:id="@+id/header_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rel_header_img_view"
+            android:layout_alignTop="@+id/rel_header_img_view"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rel_header_img_view"
+            android:gravity="center"
+            android:text="@string/Post_An_Add"
+            android:textColor="@color/white_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_page_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rel_header_img_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/rel_header_img_view"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="1 of 3"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header" />
+
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/generic_footer" />
+
+</RelativeLayout>

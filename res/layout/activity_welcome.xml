@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/generic_header" />
+    
+    <Button 
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@drawable/generic_button_selector"
+        android:clickable="true"
+        android:text="@string/Login"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_margin="30dp"
+        />
+    
+    <Button 
+        android:id="@+id/btn_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:background="@drawable/generic_button_selector"
+        android:clickable="true"
+        android:text="@string/Sign_Up"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+    
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/generic_footer" />
+    
+
+</RelativeLayout>
+

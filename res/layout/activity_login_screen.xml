@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/generic_header" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/edit_text_background_selector"
+        android:ems="5"
+        android:hint="@string/Name"
+        android:inputType="textWebEmailAddress" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionGo"
+        android:background="@drawable/edit_text_background_selector"
+        android:ems="5"
+        android:hint="@string/Enter_Password"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/chk_rememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="25dp"
+        android:button="@drawable/kkbox_checkbox"
+        android:text="@string/Remember_Me_On_This_Device"
+        android:textColor="@color/black_color" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_rememberme"
+        android:layout_margin="40dp"
+        android:background="@drawable/generic_button_selector"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="@string/Login"
+        android:textColor="@color/white_color"
+        android:textSize="18sp" />
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/generic_footer" />
+
+</RelativeLayout>

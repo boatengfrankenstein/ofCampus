@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include
+        android:id="@+id/layout_signup_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/generic_header" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        style="@style/SignUpEditStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/layout_signup_header"
+        android:hint="@string/enter_username" />
+    
+    <EditText
+        android:id="@+id/edt_fullname"
+        style="@style/SignUpEditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:hint="@string/full_name" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        style="@style/SignUpEditStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_fullname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:hint="@string/email" />
+
+    <TextView
+        android:id="@+id/txt_must_valid_mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/valid_university_email"
+        android:textSize="@dimen/sign_up_screen" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        style="@style/SignUpEditStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_must_valid_mail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password" />
+
+    <EditText
+        android:id="@+id/edt_confirm_password"
+        style="@style/SignUpEditStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:hint="@string/confrim_password" />
+
+    <Button
+        android:id="@+id/btn_activate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_confirm_password"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/black_button_selector"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/activate"
+        android:textColor="@color/white_color"
+        android:textSize="18sp" />
+    
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/generic_footer" />
+
+</RelativeLayout>
