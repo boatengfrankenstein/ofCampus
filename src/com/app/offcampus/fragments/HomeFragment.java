@@ -7,13 +7,14 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.app.ofcampus.ClassifiedsActivity;
+import com.app.ofcampus.JobsActivity;
 import com.app.ofcampus.R;
 import com.app.ui.AbstractFragment;
 
 public class HomeFragment extends AbstractFragment{
 	private Button btnClassifieds;
+	private Button btnJobs;
 	private TextView txtHelp;
 	private TextView txtContactUs;
 	private TextView txtLegal;
@@ -47,18 +48,20 @@ public class HomeFragment extends AbstractFragment{
 		setUpFooter(getView());
 		
 		btnClassifieds = (Button) getView().findViewById(R.id.btn_classifields);
-
+        btnJobs = (Button) getView().findViewById(R.id.btn_jobs); 
+		
 		setListeners();
 
 	}
 
 	private void setListeners() {
 
-		btnClassifieds.setOnClickListener(new ClassifiedsBtnClickListener());
+		btnClassifieds.setOnClickListener(new ClassifiedsBtnClassClickListener());
+		btnJobs.setOnClickListener(new ClassifiedsBtnJobsClickListener());
 
 	}
 
-	private class ClassifiedsBtnClickListener implements OnClickListener {
+	private class ClassifiedsBtnClassClickListener implements OnClickListener {
 
 		@Override
 		public void onClick(View arg0) {
@@ -67,5 +70,15 @@ public class HomeFragment extends AbstractFragment{
 		}
 
 	}
+	private class ClassifiedsBtnJobsClickListener implements OnClickListener {
+
+		@Override
+		public void onClick(View arg0) {
+
+			switchToActivity(getActivity(), JobsActivity.class, null);
+		}
+
+	}
+
 
 }

@@ -102,7 +102,7 @@ public class LoginScreenActivity extends AbstractActivity {
 				boolean isVerified = arg0.getBoolean(IS_EMAIL_VERIFIED);
 				if(isVerified) {
 					getSharedPreference(activity).putString(SESSION_TOKEN, arg0.getSessionToken());
-					switchToActivity(activity, HomeScreenActivity.class, null);
+					switchToActivity(activity, HomeScreenFragmentActivity.class, null);
 				}else{
 					showAlert(getString(R.string.login_failed_),getString(R.string.email_not_verfied),getString(R.string.ok), null, context, new DialogDialogDeligate() {
 

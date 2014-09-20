@@ -136,28 +136,14 @@ public class AbstractFragment extends Fragment implements UitilityHelper, AppCon
 
             int id = text.getId();
 
-            switch (id) {
-
-            case R.id.txt_helpTextView:
-
-                helpClick();
-
-                break;
-
-            case R.id.txt_contactUsTextView:
-
-                contactUsClick();
-
-                break;
-            case R.id.txt_legalTextView:
-
-                legalClick();
-
-                break;
-
-            default:
-                break;
-            }
+            if (id == R.id.txt_helpTextView) {
+				helpClick();
+			} else if (id == R.id.txt_contactUsTextView) {
+				contactUsClick();
+			} else if (id == R.id.txt_legalTextView) {
+				legalClick();
+			} else {
+			}
 
         }
 

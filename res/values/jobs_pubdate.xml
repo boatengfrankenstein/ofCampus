@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="jobs_pubdate">
+            <item>10th Sept 2014</item>
+            <item>8th Oct 2014</item>
+            <item>11th Jan 2345</item>
+        </string-array>
+    </resources>

@@ -135,27 +135,13 @@ public class AbsActionBarActivity extends ActionBarActivity implements UitilityH
 
 			int id = text.getId();
 
-			switch (id) {
-
-			case R.id.txt_helpTextView:
-
+			if (id == R.id.txt_helpTextView) {
 				helpClick();
-
-				break;
-
-			case R.id.txt_contactUsTextView:
-
+			} else if (id == R.id.txt_contactUsTextView) {
 				contactUsClick();
-
-				break;
-			case R.id.txt_legalTextView:
-
+			} else if (id == R.id.txt_legalTextView) {
 				legalClick();
-
-				break;
-
-			default:
-				break;
+			} else {
 			}
 
 		}

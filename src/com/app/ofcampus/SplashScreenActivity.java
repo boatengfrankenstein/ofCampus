@@ -36,7 +36,7 @@ public class SplashScreenActivity extends AbstractActivity {
 				
 				if(!TextUtils.isEmpty(sessionToken) && isRememberMe) {
 
-					switchToActivity(activity, HomeScreenActivity.class, null);
+					switchToActivity(activity, HomeScreenFragmentActivity.class, null);
 					
 				}else{
 					

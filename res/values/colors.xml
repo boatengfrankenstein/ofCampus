@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <color name="main_background_color">#FF0000</color>
+    <color name="main_background_color">#181818</color>
     <color name="white_color">#FFFFFF</color>
     <color name="black_color">#000000</color>
     <color name="gray_color">#595959</color>
@@ -11,5 +11,6 @@
     <color name="button_black_down">#413333</color>
     <color name="button_black_up">#000000</color>
     <color name="footer_text_color">#65637d</color>
-    
+    <color name="list_row_color1">#E0E0FF</color>
+    <color name="list_row_color2">#F8F8F8</color>
 </resources>

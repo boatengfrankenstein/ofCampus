@@ -6,6 +6,7 @@
 
     <!-- As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions. -->
+    
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
@@ -20,4 +21,5 @@
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp"
         android:background="@color/white_color"/>
+    
 </android.support.v4.widget.DrawerLayout>

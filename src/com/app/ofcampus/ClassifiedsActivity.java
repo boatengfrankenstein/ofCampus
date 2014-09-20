@@ -1,5 +1,6 @@
 package com.app.ofcampus;
 
+import com.app.ofcampus.R;
 import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.graphics.drawable.ColorDrawable;

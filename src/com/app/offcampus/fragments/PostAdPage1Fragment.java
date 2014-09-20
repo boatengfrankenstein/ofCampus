@@ -164,36 +164,25 @@ public class PostAdPage1Fragment extends AbstractFragment{
 
 			int id = v.getId();
 
-			switch (id) {
-
-			case R.id.category_spinner:
-
+			if (id == R.id.category_spinner) {
 				if(categoryList.size()==0) {
 					getCategory();
 				}else{
 					showCategorySelectionDialog();
 				}
-				break;
-
-			case R.id.sub_category_spinner:
-				
+			} else if (id == R.id.sub_category_spinner) {
 				if(!TextUtils.isEmpty(selectedCategory)) {
 					getSubcategory(selectedCategory);
 				}else{
 					Toast.makeText(context, "Select category first.", Toast.LENGTH_SHORT).show();
 				}
-				break;
-			case R.id.option_spinner:
-
+			} else if (id == R.id.option_spinner) {
 				if(!TextUtils.isEmpty(selectedSubcategory)) {
 					getOptionList(selectedSubcategory);
 				}else{
 					Toast.makeText(context, "Select subcategory first.", Toast.LENGTH_SHORT).show();
 				}
-				break;
-
-			default:
-				break;
+			} else {
 			}
 		}
 	}

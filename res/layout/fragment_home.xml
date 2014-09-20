@@ -20,6 +20,20 @@
         android:textColor="@color/white_color"
         android:textSize="18sp" />
     
+    <Button
+        android:id="@+id/btn_jobs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:padding="10dp"
+        android:background="@drawable/generic_button_selector"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/Jobs"
+        android:textColor="@color/white_color"
+        android:textSize="18sp" />
+    
     
     <include
         android:id="@+id/footer"

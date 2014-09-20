@@ -31,9 +31,8 @@
             android:textColor="@color/white_color"
             android:textSize="22sp"
             android:textStyle="bold" />
-        
-        
-        <TextView
+
+		<TextView
             android:id="@+id/txt_page_number_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
