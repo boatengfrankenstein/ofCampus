@@ -23,7 +23,7 @@ import android.widget.AdapterView.OnItemClickListener;
  
 public class JobsFragment extends Fragment {
  
-  @Override
+ /* @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
@@ -31,8 +31,8 @@ public class JobsFragment extends Fragment {
          
         return rootView;
     }
-}
- /*   
+}*/
+
 	private JobListAdapter adapter;
 
 	public static final String KEY_TITLE="job_title";
@@ -45,11 +45,11 @@ public class JobsFragment extends Fragment {
 
 		View rootView = inflater.inflate(R.layout.fragment_jobs_lists, container, false);
        
-		//adapter = new JobListAdapter(getActivity(), getData());
-		ListView list = (ListView) rootView.findViewById(R.id.jobListText);
-		//list.setAdapter(adapter);
+		adapter = new JobListAdapter(getActivity(), getData());
+		ListView list = (ListView) rootView.findViewById(R.id.jobsListText);
+		list.setAdapter(adapter);
 
-		/*list.setOnItemClickListener(new OnItemClickListener() {
+		list.setOnItemClickListener(new OnItemClickListener() {
 
 				
 			@Override
@@ -65,11 +65,11 @@ public class JobsFragment extends Fragment {
 			}
 			
 		});
-		return list;
+		return rootView;
 	}
 
 	private ArrayList<JobItem> getData() {
-		ArrayList<JobItem> newsList = new ArrayList<JobItem>();
+		ArrayList<JobItem> jobListText = new ArrayList<JobItem>();
 		String[] headlines = getResources().getStringArray(R.array.jobs_title);
 		String[] pubDate = getResources().getStringArray(R.array.jobs_pubdate);
 		String[] details = getResources().getStringArray(R.array.jobs_details);
@@ -79,8 +79,8 @@ public class JobsFragment extends Fragment {
 			item.setTitle(headlines[i]);
 			item.setPubDate(pubDate[i]);
 			item.setDetails(details[i]);
-			newsList.add(item);
+			jobListText.add(item);
 		}
-		return newsList;
-	}
-}*/
+		return jobListText;
+ }
+}
